@@ -67,7 +67,7 @@ plt.xlabel('Countries')
 plt.ylabel('Co2 emission')
 plt.show()
 
-#heat maps
+#heat maps showing correlation
 canada = pd.DataFrame(
 {'Urban Population': year_urban['Canada'],
 'Elec. Access': year_electric['Canada']},
