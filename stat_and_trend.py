@@ -58,22 +58,25 @@ plt.legend(bbox_to_anchor=(1,1))
 plt.title('Year on Year Trend of the Urban Population for these 5 countries')
 plt.xlabel('Year')
 plt.ylabel('Urban Population')
+plt.savefig('urban poplation.png')
 plt.show()
 
 #bar plot
 cnty_electric.plot(kind='bar')
-plt.title('Grouped bar for Co2 emission for different countries over the years')
+plt.title('Grouped bar for electric consumption for different countries over the years')
 plt.xlabel('Countries')
-plt.ylabel('Co2 emission')
+plt.ylabel('electric consumption')
+plt.savefig('urban poplation 2.png')
 plt.show()
 
 #heat maps showing correlation
 canada = pd.DataFrame(
 {'Urban Population': year_urban['Canada'],
-'Elec. Access': year_electric['Canada']},
+'Elec. consumption': year_electric['Canada']},
 [ '2005','2006','2007','2008','2009','2010','2011','2012'])
 
 plt.figure(figsize=(8,5))
 sns.heatmap(canada.corr(),annot=True,cmap='Greens')
 plt.title('Correlation heatmap Canada')
+plt.savefig('urban and poplation.png')
 plt.show()
