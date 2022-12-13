@@ -16,21 +16,21 @@ def solution(filename,countries,columns,indicator):
 
     Parameters
     ----------
-    filename : TYPE
-        DESCRIPTION.
-    countries : TYPE
-        DESCRIPTION.
-    columns : TYPE
-        DESCRIPTION.
-    indicator : TYPE
-        DESCRIPTION.
+    filename : string
+        filename.
+    countries : list
+        list of countries to be considered.
+    columns : list
+        list of countries to be used.
+    indicator : string
+        indicator to be retrieved from the dataset.
 
     Returns
     -------
-    df : TYPE
-        DESCRIPTION.
-    TYPE
-        DESCRIPTION.
+    df : pandas dataframe
+        original dataframe.
+    dataframe
+        transposed datframe.
 
     '''
     df = pd.read_csv(filename,skiprows=4)
